@@ -32,6 +32,15 @@ public class Calculator {
 //    }
 
     private Tools tools=new Tools();
+
+    public Tools getTools() {
+        return tools;
+    }
+
+    public void setTools(Tools tools) {
+        this.tools = tools;
+    }
+
     /**
      * 接下来我们写加减乘除的封装方法，命名为binary_asmd,在方法中，通过number栈的pop方法来调取操作数，而具体操作符是由外部传入一个opt字符串来确定。
      */

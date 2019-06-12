@@ -21,6 +21,30 @@ public class Resultopt {
 
     private Tools tools=new Tools();
 
+    public Stack<Double> getNumber() {
+        return number;
+    }
+
+    public void setNumber(Stack<Double> number) {
+        this.number = number;
+    }
+
+    public Stack<List<Double>> getNumber_list() {
+        return number_list;
+    }
+
+    public void setNumber_list(Stack<List<Double>> number_list) {
+        this.number_list = number_list;
+    }
+
+    public Tools getTools() {
+        return tools;
+    }
+
+    public void setTools(Tools tools) {
+        this.tools = tools;
+    }
+
     /**
      * 对输入的RPM进行处理。以空格为分割。再进行遍历字符串数组，如果是数字就对number和number_list栈进行写入。
      * 遇到操作符就去调Calculator的对应操作方法，并传入number和number_list。
